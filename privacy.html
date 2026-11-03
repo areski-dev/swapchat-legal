@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>SwapChat — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; --fg:#1a1a1a; --muted:#555; --bg:#ffffff; --rule:#e5e5e5; --accent:#0a84ff; --chip:#f0f0f0; }
+  @media (prefers-color-scheme: dark){ :root{ --fg:#e8e8e8; --muted:#a8a8a8; --bg:#121212; --rule:#2a2a2a; --accent:#0a84ff; --chip:#242424; } }
+  body{ font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif; color:var(--fg);
+        background:var(--bg); max-width:720px; margin:0 auto; padding:32px 20px; }
+  h1{ font-size:1.6rem; margin:0 0 4px; } h2{ font-size:1.15rem; margin:2rem 0 .4rem; }
+  .meta{ color:var(--muted); font-size:.9rem; margin-bottom:1.5rem; }
+  a{ color:var(--accent); } ul{ padding-left:1.2rem; } li{ margin:.3rem 0; }
+  .brand{ text-align:center; margin:0 0 1.5rem; }
+  .brand img{ width:76px; height:76px; border-radius:17px; box-shadow:0 1px 5px rgba(0,0,0,.18); }
+  .brand .name{ font-size:1.3rem; font-weight:700; margin-top:.6rem; }
+  .langbar{ display:flex; justify-content:center; gap:8px; margin-bottom:2.5rem; }
+  .langbtn{ font:inherit; font-size:.85rem; font-weight:600; cursor:pointer; padding:6px 16px;
+            border-radius:999px; border:1px solid var(--rule); background:var(--chip); color:var(--muted); }
+  .langbtn.active{ background:var(--accent); border-color:var(--accent); color:#fff; }
+  section{ display:none; }
+  section.active{ display:block; }
+</style>
+</head>
+<body>
+
+<div class="brand">
+  <img src="icon.png" alt="SwapChat" />
+  <div class="name">SwapChat</div>
+</div>
+
+<div class="langbar">
+  <button class="langbtn active" data-l="en" onclick="setLang('en')">English</button>
+  <button class="langbtn" data-l="fr" onclick="setLang('fr')">Français</button>
+</div>
+
+<section id="en" class="active">
+  <h1>SwapChat — Privacy Policy</h1>
+  <p class="meta">Last updated: 3 November 2026 · Test (alpha) version</p>
+
+  <p>SwapChat is a <strong>peer-to-peer, decentralized, end-to-end encrypted</strong> messenger. It is
+  designed so that no central server — including the developer’s — can read your messages or retain your
+  data. This document explains what data exists, where it lives, and what never leaves your device.</p>
+
+  <h2>1. The principle: no server, no collection</h2>
+  <ul>
+    <li>Your messages are <strong>end-to-end encrypted</strong> (Signal Protocol) and exchanged directly
+        between devices, peer-to-peer (libp2p). The developer never sees them.</li>
+    <li>There is <strong>no server account</strong>: no email, phone number, or password required. Your
+        identity is a key pair generated on your device.</li>
+    <li>The developer does <strong>not collect</strong> your messages, contacts, metadata, or any analytics
+        or advertising data. There are no trackers and no ads.</li>
+  </ul>
+
+  <h2>2. Data stored on your device</h2>
+  <ul>
+    <li><strong>Identity keys</strong>: stored in the iOS Keychain; the private key never leaves the device.</li>
+    <li><strong>Messages, contacts, contact notes, and groups</strong>: stored locally, encrypted.</li>
+    <li>Uninstalling the app <strong>deletes this data</strong>. There is no server-side copy to request erasure of.</li>
+  </ul>
+
+  <h2>3. Permissions requested</h2>
+  <ul>
+    <li><strong>Camera</strong>: scan contact QR codes and take photos to share.</li>
+    <li><strong>Microphone</strong>: record voice messages.</li>
+    <li><strong>Photo library</strong>: share images you choose.</li>
+    <li><strong>Local network</strong>: discover and reach your peers directly.</li>
+  </ul>
+  <p>Each permission is used only for its stated function, on-device. SwapChat does not use location.</p>
+
+  <h2>4. AI agents (“P2agents”)</h2>
+  <p>SwapChat lets you link <strong>AI agents you control</strong> (for example an OpenClaw agent) to your
+  identity, via a pairing key signed on your device, so the agent recognizes you as its owner.</p>
+  <ul>
+    <li>Exchanges with an agent are ordinary messages: <strong>end-to-end encrypted</strong> and peer-to-peer.
+        The SwapChat developer has no access to them.</li>
+    <li>An agent is software <strong>you host or operate</strong>. Any processing the agent performs (and any
+        AI models it uses) is governed by <strong>its operator’s configuration and responsibility — you</strong>,
+        or whoever administers the agent. SwapChat does not send your content to any third-party AI provider
+        on its own.</li>
+    <li>If you connect an agent that relies on an external AI service, the content you send it is subject to
+        that service’s privacy practices, outside SwapChat’s control.</li>
+  </ul>
+
+  <h2>5. Network relays</h2>
+  <p>When a direct connection between two devices is not possible, <em>encrypted</em> traffic may pass through
+  a relay. A relay can never read the content (it only sees encrypted data). Any use of a relay is optional
+  and only for routing.</p>
+
+  <h2>6. Children</h2>
+  <p>SwapChat is not directed to children under 13 and does not knowingly request data from them.</p>
+
+  <h2>7. Changes</h2>
+  <p>This policy may change. The “last updated” date at the top is authoritative.</p>
+
+  <h2>8. Contact</h2>
+  <p>Questions: <a href="mailto:meihdi.juge@gmail.com">meihdi.juge@gmail.com</a>.</p>
+</section>
+
+<section id="fr">
+  <h1>SwapChat — Politique de confidentialité</h1>
+  <p class="meta">Dernière mise à jour : 3 novembre 2026 · Version de test (alpha)</p>
+
+  <p>SwapChat est une messagerie <strong>pair-à-pair, décentralisée et chiffrée de bout en bout</strong>.
+  Elle est conçue pour qu’aucun serveur central — y compris ceux de l’éditeur — ne puisse lire vos
+  messages ni conserver vos données. Ce document explique quelles données existent, où elles résident
+  et ce qui ne quitte jamais votre appareil.</p>
+
+  <h2>1. Le principe : pas de serveur, pas de collecte</h2>
+  <ul>
+    <li>Vos messages sont <strong>chiffrés de bout en bout</strong> (protocole Signal) et échangés
+        directement entre les appareils, en pair-à-pair (libp2p). L’éditeur ne les voit jamais.</li>
+    <li>Il n’existe <strong>aucun compte serveur</strong> : pas d’email, de numéro de téléphone ni de
+        mot de passe à fournir. Votre identité est une paire de clés générée sur votre appareil.</li>
+    <li>L’éditeur <strong>ne collecte pas</strong> vos messages, contacts, métadonnées, ni aucune donnée
+        analytique ou publicitaire. Il n’y a ni traceur, ni publicité.</li>
+  </ul>
+
+  <h2>2. Données stockées sur votre appareil</h2>
+  <ul>
+    <li><strong>Clés d’identité</strong> : stockées dans le Trousseau (Keychain) d’iOS ; la clé privée
+        ne quitte jamais l’appareil.</li>
+    <li><strong>Messages, contacts, notes de contact et groupes</strong> : stockés localement, chiffrés.</li>
+    <li>Désinstaller l’application <strong>supprime ces données</strong>. Il n’y a aucune copie côté serveur
+        à demander à effacer.</li>
+  </ul>
+
+  <h2>3. Autorisations demandées</h2>
+  <ul>
+    <li><strong>Appareil photo</strong> : scanner les QR codes d’ajout de contact et prendre des photos à partager.</li>
+    <li><strong>Microphone</strong> : enregistrer des messages vocaux.</li>
+    <li><strong>Photothèque</strong> : partager des images que vous choisissez.</li>
+    <li><strong>Réseau local</strong> : découvrir et joindre vos pairs en direct.</li>
+  </ul>
+  <p>Chaque autorisation sert uniquement à la fonction correspondante, sur l’appareil. SwapChat
+  n’utilise pas la localisation.</p>
+
+  <h2>4. Agents IA (« P2agents »)</h2>
+  <p>SwapChat vous permet de relier des <strong>agents d’intelligence artificielle que vous contrôlez</strong>
+  (par exemple un agent OpenClaw) à votre identité. Vous générez pour cela une clé d’appairage signée sur
+  votre appareil : l’agent vous reconnaît alors comme son propriétaire.</p>
+  <ul>
+    <li>Les échanges avec un agent sont des messages comme les autres : <strong>chiffrés de bout en bout</strong>,
+        transitant en pair-à-pair. L’éditeur de SwapChat n’y a pas accès.</li>
+    <li>Un agent est un logiciel <strong>que vous hébergez ou opérez</strong>. Le traitement effectué par
+        l’agent (et les éventuels modèles d’IA qu’il utilise) relève de <strong>la configuration et de la
+        responsabilité de son opérateur — vous</strong>, ou la personne qui administre l’agent. SwapChat ne
+        transmet vos contenus à aucun fournisseur d’IA tiers de son propre fait.</li>
+    <li>Si vous choisissez de connecter un agent qui s’appuie sur un service d’IA externe, les contenus que
+        vous lui envoyez sont soumis aux pratiques de confidentialité de ce service, hors du contrôle de SwapChat.</li>
+  </ul>
+
+  <h2>5. Relais réseau</h2>
+  <p>Lorsqu’une connexion directe entre deux appareils n’est pas possible, le trafic <em>chiffré</em> peut
+  transiter par un relais. Un relais ne peut jamais lire le contenu (il ne voit que des données chiffrées).
+  Tout recours à un relais reste optionnel et vise uniquement l’acheminement.</p>
+
+  <h2>6. Enfants</h2>
+  <p>SwapChat n’est pas destinée aux enfants de moins de 13 ans et ne leur demande sciemment aucune donnée.</p>
+
+  <h2>7. Modifications</h2>
+  <p>Cette politique peut évoluer. La date de dernière mise à jour en haut de page fait foi.</p>
+
+  <h2>8. Contact</h2>
+  <p>Pour toute question : <a href="mailto:meihdi.juge@gmail.com">meihdi.juge@gmail.com</a>.</p>
+</section>
+
+<script>
+  function setLang(l){
+    var en = document.getElementById('en'), fr = document.getElementById('fr');
+    en.classList.toggle('active', l === 'en');
+    fr.classList.toggle('active', l === 'fr');
+    var btns = document.querySelectorAll('.langbtn');
+    for (var i = 0; i < btns.length; i++){ btns[i].classList.toggle('active', btns[i].getAttribute('data-l') === l); }
+    try { document.documentElement.lang = l; } catch (e) {}
+  }
+</script>
+
+</body>
+</html>
